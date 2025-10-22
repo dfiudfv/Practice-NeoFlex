@@ -1,10 +1,19 @@
 package ru.neoflex.practice.controller;
 
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-@RestController
 
+
+@RestController
 public class CalcController {
-    public static void main(String[] args) {
-        System.out.println("Привет мир господа это новый пуш надеюсь без ошибок надеюсь теперь еще добавил originGitHub");
+    @GetMapping("/plus/{a}/{b}")
+    public Integer plus() {
+
+    }
+
+    @GetMapping("/minus/{a}/{b}")
+    public Integer minus() {
+
     }
 }
